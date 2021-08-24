@@ -10,9 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ex14_1_4">
         <service
-            android:name=".MusicService"
-            android:enabled="true"
-            android:exported="true"></service>
+            android:name=".MusicService">
+            <intent-filter>
+                <action android:name="kr.hs.emirim.w2033.ex14_1_4.MusicService"/>
+            </intent-filter>
+        </service>
 
         <activity android:name=".MainActivity">
             <intent-filter>
